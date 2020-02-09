@@ -7,42 +7,15 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script>
+    $(function(){
+      $("#header").load("header.html");
+      $("#footer").load("footer.html");
+    });
+    </script>
   </head>
   <body>
-
-    <!-- Responsive Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <a class="navbar-brand" href="#">David Jaimes</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <!-- Responsive, Collapsable Navigation Menu -->
-      <div class="collapse navbar-collapse" id="navbarColor02">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Plots
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Temperature</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Humidity</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Cloudiness</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Wind Speed</a>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Comparison</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Data</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+    <div id="header"></div>
 
     <!-- Summary Banner Container -->
     <div class="jumbotron">
@@ -64,9 +37,7 @@
           <div class="card mb-3">
             <h3 class="card-header">Temperature</h3>
             <img style="height: 100%; width: 100%; display: block;" src="images/Fig1.png" alt="Temperature">
-            <div class="card-footer text-muted">
-              <a href="visualizations/" class="card-link">Link to Figure 1</a>
-            </div>
+            <a href="#" class="btn btn-primary">Link to Figure 1</a>
           </div>
         </div>
 
@@ -75,9 +46,7 @@
           <div class="card mb-3">
             <h3 class="card-header">Humidity</h3>
             <img style="height: 100%; width: 100%; display: block;" src="images/Fig2.png" alt="Humidity">
-            <div class="card-footer text-muted">
-              <a href="visualizations/" class="card-link">Link to Figure 2</a>
-            </div>
+            <a href="#" class="btn btn-primary">Link to Figure 2</a>
           </div>
         </div>
 
@@ -86,9 +55,7 @@
           <div class="card mb-3">
             <h3 class="card-header">Cloudiness</h3>
             <img style="height: 100%; width: 100%; display: block;" src="images/Fig3.png" alt="Cloudiness">
-            <div class="card-footer text-muted">
-              <a href="visualizations/" class="card-link">Link to Figure 3</a>
-            </div>
+            <a href="#" class="btn btn-primary">Link to Figure 3</a>
           </div>
         </div>
 
@@ -97,9 +64,7 @@
           <div class="card mb-3">
             <h3 class="card-header">Wind Speed</h3>
             <img style="height: 100%; width: 100%; display: block;" src="images/Fig4.png" alt="wind speed">
-            <div class="card-footer text-muted">
-              <a href="visualizations/" class="card-link">Link to Figure 4</a>
-            </div>
+            <a href="#" class="btn btn-primary">Link to Figure 4</a>
           </div>
         </div>
       </div>
