@@ -9,14 +9,6 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <!--
-    <script>
-    $(function(){
-      $("#header").load("header.html");
-      $("#footer").load("footer.html");
-    });
-    </script>
-    -->
   </head>
   <body>
 
@@ -54,17 +46,6 @@
       </div>
     </nav>
 
-    <!-- Summary Banner Container -->
-    <div class="jumbotron">
-      <h1 class="display-3">Weather API</h1>
-      <p class="lead">Collect temperature, humidity, cloud, and wind speed data from <a href="https://openweathermap.org/api">OpenWeatherMap API</a> on 500+ randomly selected cities and use Matplotlib to visualize results.</p>
-      <hr class="my-4">
-      <p><strong>Background: </strong>Create a Python script to visualize the weather of 500+ cities across the world of varying distance from the equator. To accomplish this, utilize a simple Python library, the <a href="https://openweathermap.org/api">OpenWeatherMap API</a>, and a little common sense to create a representative model of weather across world cities.</p>
-      <p class="lead">
-        <a class="btn btn-dark btn-lg" href="#" role="button">Learn More</a>
-      </p>
-    </div>
-
     <!-- Breadcrumbs -->
     <nav aria-label="breadcrumb">
       <ol class="breadcrumb">
@@ -73,25 +54,47 @@
       </ol>
     </nav>
 
-    <!-- Carousel For Four Images with Links -->
+    <!-- Card for Plots -->
     <div class="container">
       <div class="row">
-        <div class="col-lg">
-          <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <a href="#"><img class="d-block w-100" src="images/temperature.png" alt="First slide"></a>
-              </div>
-              <div class="carousel-item">
-                <a href="#"><img class="d-block w-100" src="images/humidity.png" alt="First slide"></a>
-              </div>
-              <div class="carousel-item">
-                <a href="#"><img class="d-block w-100" src="images/cloudiness.png" alt="First slide"></a>
-              </div>
-              <div class="carousel-item">
-                <a href="#"><img class="d-block w-100" src="images/wind-speed.png" alt="First slide"></a>
-              </div>
-            </div>
+
+        <!-- Visualization Number 1-->
+        <div class="col-md-6">
+          <div class="card mb-3">
+            <h3 class="card-header">Temperature</h3>
+            <a href="#">
+              <img style="height: 100%; width: 100%; display: block;" src="images/temperature.png" alt="temperature">
+            </a>
+          </div>
+        </div>
+
+        <!-- Visualization Number 2-->
+        <div class="col-md-6">
+          <div class="card mb-3">
+            <h3 class="card-header">Humidity</h3>
+            <a href="#">
+              <img style="height: 100%; width: 100%; display: block;" src="images/humidity.png" alt="Humidity">
+            </a>
+          </div>
+        </div>
+
+        <!-- Visualization Number 3 -->
+        <div class="col-md-6">
+          <div class="card mb-3">
+            <h3 class="card-header">Cloudiness</h3>
+            <a href="#">
+              <img style="height: 100%; width: 100%; display: block;" src="images/cloudiness.png" alt="Cloudiness">
+            </a>
+          </div>
+        </div>
+
+        <!-- Visualization Number 4 -->
+        <div class="col-md-6">
+          <div class="card mb-3">
+            <h3 class="card-header">Wind Speed</h3>
+            <a href="#">
+              <img style="height: 100%; width: 100%; display: block;" src="images/wind-speed.png" alt="wind speed">
+            </a>
           </div>
         </div>
       </div>
